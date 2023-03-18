@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--文档声明，告诉浏览器，我们使用html5来显示网页-->
+<html lang="zh-CH"> <!--lang 定义当前文档显示的语言，zh-CN定义为中文，en为英文，给浏览器提示要不要翻译-->
+<head>
+    <meta charset="UTF-8"><!--字符集编码，必须要写，不然会乱码-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first Website</title>
+</head>
+<body>
+    xxxxxxxxxxx李马克xxxxxxxxxxx
+    <!--标题标签-->
+    <h1>NCT</h1>
+    <h2>NCT</h2>
+    <h3>NCT</h3>
+    <h4>NCT</h4>
+    <h5>NCT</h5>
+    <h6>NCT</h6>
+    <!--标题一共六级选，
+        文字加粗一行显，
+        有大到小依次减，
+        从重到轻随之变，
+        语法规范书写后，
+        具体效果刷新见。
+    -->
+    <!--段落标签，用来定义段落，段落后自动空一行-->
+    <p>1、HTML5 是网页开发的基础，从最简单的网页开发基础入手，使用常见的标签制作网页内容</p>
+
+    <p>2、Css3通过浮动、定位、Flex 精细控制网页布局，通过背景、圆角、阴影、渐变等美装饰美化网页内容，结合转换、过渡、动画高级特性增强用户体验，能够编写大型综合性网页。</p>    
+        
+    <p>3、电商网页制作，基于设计稿编写网页，确保网页布局的高还原度，综合运用 HTML、CSS 的基础知识，归纳使用技巧，提升综合实战水平，借助蓝湖协同平台，体验真实团队开发流程。  作者：黑马前端 https://www.bilibili.com/read/cv11837978 出处：bilibili</p>    
+    
+    <!--换行标签 break单标签强制换行-->
+    <br/>
+
+    <!--文本格式化标签，为文字设置粗体，下划线等-->
+    <!--都推荐第一种，语义更强烈-->
+    <!--加粗-->
+    <strong>李马克</strong>
+    <b>李马克</b>
+    <!--倾斜-->
+    <em>李泰容</em>
+    <i>李泰容</i>
+    <!--删除线-->
+    <del>李帝努是小狗</del>
+    <s>李马克是小狮子</s>
+    <!--下划线-->
+    <ins>黄仁俊是公主</ins>
+    <u>黄仁俊是小女孩</u>
+
+    <!--无语义标签
+        用来布局，例如文字图片，相当于框图
+        div - division 分区
+        span - 跨度
+    -->
+    <div>div标签独占一行，超大盒子</div>
+    <span>span标签一行可以放多个，小盒子</span>
+    <span>NCTdream</span>
+    <span>NCT127</span>
+
+    <!--图像标签-->
+    <!--图像标签是单标签，必须要有src-->
+    <!--属性之间不分先后，属性采用键值对的格式2-->
+    <h4>鬼刀</h4>
+    <img src = "..\image\90425d_21_sky2_4k.jpg"/>
+
+    <h4>alt 替换文本</h4>
+    <img src = "..\image\90425d_21_sky2_4k.jpg" alt="日落"/>
+
+    <h4>title 提示文本:鼠标放在图片上的提示</h4>
+    <img src = "..\image\90425d_21_sky2_4k.jpg" alt="日落" title="日落"/>
+
+    <h4>width height 一般只设置一个另一个属性会等比例缩放</h4>
+    <img src = "..\image\90425d_21_sky2_4k.jpg" alt="日落" title="日落" width="500">
+    <h4>border边框 ,一般用CSS不用hmtl</h4>
+    <img src = "..\image\90425d_21_sky2_4k.jpg" alt="日落" title="日落" width="500" border="15"/>
+
+    <!--如果图片地址不在网络上而在本地，一般很少用绝对路径，因为每个人电脑不一样-->
+    <!--上级路径 ...返回上一级--> 
+    <h4>鬼刀2</h4>
+    <img src = "..\9d6f9b_18_Shine2_8k.jpg" alt="鬼刀狮子公主" title="鬼刀狮子公主" width="500" border="15"/>
+     <!--下级路径 --> 
+     <h4>鬼刀3</h4>
+     <img src = "details\14004_80e4f94226.jpg" alt="鬼刀公主跳舞" title="鬼刀公主跳舞" width="500" border="15"/>
+    <!--同级路径 -->
+    <h4>鬼刀4</h4>
+    <img src = "piano.jpg" alt = "鬼刀公主弹琴" title = "鬼刀公主弹琴" width="500" border="15"/>
+
+
+    <!--
+        <a>标签用来定义超链接，必须有herf属性,
+        target:目标窗口的弹出方式，开始和结束标签之间写图像链接或者文本
+    -->
+    <!--链接分类：
+                外部链接
+                内部链接
+                空链接
+                下载链接
+                网页元素的链接（文本，图片，视频，音频...）
+                锚点链接
+    -->
+    <!--外部链接-->
+    <h1>点击下方链接看小狗劲舞</h1>
+    <a href = "https://www.bilibili.com/video/BV1Be4y187GX/?spm_id_from=333.337.search-card.all.click" target="_blank">在新标签页打开</a> <br/>
+    <a href = "https://www.bilibili.com/video/BV1Be4y187GX/?spm_id_from=333.337.search-card.all.click" target="_self">在此页打开</a> <br/>
+    <!--内部链接-->
+    <a href = "04-vscode创建页面.html">在此页打开04-vscode创建页面.html</a> <br/>
+    <!--空链接-->
+    <a href = "#">这是一个空链接</a> <br/>
+    <!--下载链接-->
+    <a href = "ppt作业.zip">下载我的ppt选修课作业</a> <br/>
+    <!--网页元素链接-->
+    <h1>点击下方图片，看小狗新歌mv</h1>
+    <a href = "https://www.bilibili.com/video/BV1t341197eu/?spm_id_from=333.788.recommend_more_video.-1&vd_source=868a6575e086b7c37613ce804d6b5c4b"
+    ><img src = "nctAy-Yo.jpg"/></a>
+
+    <h2>目录</h2>
+    1 <a href = "#NCT127">NCT127</a><br/>
+    2 <a href = "#NCTDREAM">NCTDREAM</a><br/>
+    3 <a href = "#EXO">EXO</a><br/>
+    4 <a href = "#SEVENTEEN">SEVENTEEN</a><br/>
+    5 <a href = "#TREASURE">TREASURE</a><br/>
+
+    <h2 id = "NCT127">NCT127</h2>
+    <h2 id = "NCTDREAM">NCTDREAM</h2>
+    <h2 id = "EXO">EXO</h2>
+    <h2 id = "SEVENTEEN">SEVENTEEN</h2>
+    <h2 id = "TREASURE">TREASURE</h2>
+    
+    <!--特殊字符-->
+    <a href = "https://blog.csdn.net/wxl2454497677/article/details/107608884" target="_blank">HTML特殊字符</a> <br/>
+    空格& nbsp：李马克&nbsp;&nbsp;&nbsp;&nbsp;就是要C <br/>
+    大于号& gt小于号& lt: a &gt; b &lt; c <br/>
+
+    <a href = "#top">返回顶部</a> <br/>
+
+</body>
+</html>
